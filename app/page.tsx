@@ -1,64 +1,74 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
+"use client";
 import Head from "next/head";
-import Image from "next/image";
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import Card from "./components/Card";
+import NavBar from "./components/NavBar";
+import { useState } from "react";
 
 export default function Home() {
+  // const [darkMode, setDarkMode] = useState(false);
+  const handleLinkedInClick = () => {
+    const linkedInUrl = "https://www.linkedin.com";
+    window.open(linkedInUrl, "_blank");
+  };
   return (
-    <div>
+    <div className="">
       <Head>
         <title>My portfolio</title>
       </Head>
-
-      <main className="bg-white px-10">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Developed by</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-1.5 border-none rounded-md ml-8"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
+      {/* Main component is here */}
+      <main className="px-5 md:px-20 lg:px-40 dark:bg-slate-800">
+        {/* This section covers the NavBar, and the body below it */}
+        <section className="">
+          <div>
+            <NavBar />
+          </div>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Yousuf</h2>
-            <h3 className="text-2xl py-2">Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
-              Junior Software Developer. Born and raised in Southern California
+            <h2 className="text-5xl py-2 dark:text-teal-500 text-teal-600 font-medium md:text-6xl">
+              Hey, I'm Yousuf!
+            </h2>
+            <h3 className="text-2xl pt-3 pb-2 md:text-3xl">
+              Software Developer
+            </h3>
+            <p className="text-md py-5 leading-8 md:text-2xl max-w-xl mx-auto">
+              Burtons is a new display font with cool characters. it's a
+              delightful font duo, serif and script perfect for headlines
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-6 text-gray-600">
-            <AiFillTwitterCircle></AiFillTwitterCircle>
-            <AiFillLinkedin></AiFillLinkedin>
+          <div className="text-5xl flex justify-center gap-16 py-6  md:text-7xl">
+            <AiFillLinkedin
+              onClick={handleLinkedInClick}
+              style={{ cursor: "pointer" }}
+            />{" "}
             <AiFillGithub />
+            <AiOutlineMail />
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer:</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Lorem Ipsum dolores meow
+            <h2 className="text-4xl lg:text-5xl pt-10 pb-3 dark:text-teal-500 text-teal-600 font-medium">
+              About me
+            </h2>
+            <p className="text-md md:text-xl py-2 leading-8 px-10 max-w-6xl">
+              Lorem Ipsum dolores meow more text to be filled here this is just
+              text filler text this text is filler text filler text I love
+              watching my pidol Haaland why he didn't win Ballon d'or
             </p>
           </div>
+          <div className="lg:flex gap-10">
+            <Card cardTitle="Pionel Pandreas Pessi" />
+            <Card cardTitle="Pristiano Penaldo" />
+            <Card cardTitle="Pylian MPayPal" />
+            <Card cardTitle="Perling Paaland" />
+          </div>
+        </section>
+        <section>
           <div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              {/* Image here */}
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful designs</h3>
-              <p className="py-2">Creating elegant designs</p>
-              <h4>Software tools I use</h4>
-              <p>Python</p>
-              <p>JS/TS</p>
-              <p>Dart</p>
-            </div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-5 leading-8">
+              Burtons is a new display font with cool characters. it's a
+              delightful font duo, serif and script perfect for headlines
+            </p>
           </div>
         </section>
       </main>
