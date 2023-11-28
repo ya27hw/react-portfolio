@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import Card from "./components/Card";
-import NavBar from "./components/NavBar";
+import {NavBar} from "./components/NavBar";
 import { useState } from "react";
 
 export default function Home() {
