@@ -71,14 +71,14 @@ export default function Home() {
             >
               About me
             </h2>
-            <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
+            <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl text-justify">
               I&apos;m a Computer Science graduate with First Class Honours from
               Heriot Watt University. My expertise spans a variety of
               programming languages, including JavaScript, TypeScript, Python,
               Dart, and C#. Notably, I developed a comprehensive Ethereum mobile
               wallet application using Flutter.
             </p>
-            <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
+            <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl text-justify">
               Additionally, I led a team in creating a cross-platform social
               media application and guided a successful 2D multiplayer game
               development project. These experiences have honed my skills in
