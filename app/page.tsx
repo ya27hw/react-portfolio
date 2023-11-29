@@ -63,7 +63,7 @@ export default function Home() {
             </h2>
             <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
               I&apos;m a Computer Science graduate with First Class Honours from
-              Heriot Watt University in Dubai, UAE. My expertise spans a variety
+              Heriot Watt University. My expertise spans a variety
               of programming languages, including JavaScript, TypeScript,
               Python, Dart, and C#. Notably, I developed a comprehensive
               Ethereum mobile wallet application using Flutter.
@@ -73,8 +73,7 @@ export default function Home() {
               media application and guided a successful 2D multiplayer game
               development project. These experiences have honed my skills in
               mobile app development, backend services, and collaborative
-              problem-solving, positioning me as a dynamic Junior Software
-              Developer seeking impactful opportunities in internships.
+              problem-solving.
             </p>
           </div>
           <div id="projects-section">
