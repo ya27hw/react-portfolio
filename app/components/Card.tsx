@@ -4,7 +4,7 @@ interface CardProps {
 
 function Card({ cardTitle }: CardProps): JSX.Element {
   return (
-    <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-slate-700 bg-gray">
+    <div className="text-center flex-1 shadow-2xl p-8 rounded-xl my-10 dark:bg-slate-700 bg-gray">
       {/* Image here */}
       <h3 className="text-lg font-medium pt-8 pb-2">{cardTitle}</h3>
       <p className="py-2">Creating elegant designs</p>

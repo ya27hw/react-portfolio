@@ -18,7 +18,7 @@ export default function Home() {
         <title>My portfolio</title>
       </Head>
       {/* Main component is here */}
-      <main className="px-5 md:px-20 lg:px-40 dark:bg-slate-800 bg-white">
+      <main className="px-5 md:px-20 max-w-screen-2xl mx-auto lg:px-40 dark:bg-slate-800 bg-white">
         <div id="navbar-section" className="pt-5 md:pt-2">
           <NavBar />
         </div>
@@ -85,28 +85,24 @@ export default function Home() {
               Projects
             </h2>
             <div className="lg:flex gap-10" id="cards-section">
-              <Card cardTitle="Pionel Pandreas Pessi" />
-              <Card cardTitle="Pristiano Penaldo" />
-              <Card cardTitle="Pylian MPayPal" />
-              <Card cardTitle="Perling Paaland" />
+              <Card cardTitle="Ethereum Wallet App" />
+              <Card cardTitle="Flixora - Social Media App" />
+              <Card cardTitle="Animu" />
+              {/* <Card cardTitle="Perling Paaland" /> */}
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-5 leading-8">
-              Burtons is a new display font with cool characters. it&apos;s a
-              delightful font duo, serif and script perfect for headlines
-            </p>
-          </div>
           <h2
             id="contact"
-            className="text-4xl lg:text-5xl py-10 dark:text-teal-500 text-teal-600 font-medium"
+            className="text-4xl lg:text-5xl py-3 dark:text-teal-500 text-teal-600 font-medium"
           >
             Contact Me
           </h2>
-          <div className="text-5xl flex justify-center gap-16 pb-7">
+          <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
+            Feel free to reach out to me on my e-mail yousufashraf@elbaesy.com, or on of my links below. Thank you for your interest!
+          </p>
+          <div className="text-5xl flex justify-center gap-16 py-7">
             <AiFillLinkedin
               onClick={handleLinkedInClick}
               style={{ cursor: "pointer" }}

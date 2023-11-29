@@ -18,7 +18,7 @@ function NavBar() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-3 text-lg lg:text-xl lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
       <Typography
         as="li"
         variant="small"
@@ -53,12 +53,12 @@ function NavBar() {
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-1 lg:px-8 lg:py-3 bg-teal-700 dark:bg-teal-600 border-none">
+    <Navbar className="mx-auto max-w-screen-2xl px-4 py-1 lg:px-8 lg:py-3 bg-teal-700 dark:bg-teal-600 border-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium text-xl"
+          className="mr-4 cursor-pointer py-1.5 font-medium text-2xl md:text-3xl"
         >
           Yousuf
         </Typography>
