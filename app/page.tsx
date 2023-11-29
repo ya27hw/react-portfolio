@@ -3,7 +3,6 @@ import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import Card from "./components/Card";
 import NavBar from "./components/NavBar";
-import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
@@ -93,10 +92,19 @@ export default function Home() {
             >
               Projects
             </h2>
-            <div className="lg:flex gap-10" id="cards-section">
-              <Card cardTitle="Ethereum Wallet App" />
-              <Card cardTitle="Flixora - Social Media App" />
-              <Card cardTitle="Animu" />
+            <div className="md:flex gap-10" id="cards-section">
+              <Card
+                cardTitle="Ethereum Wallet App"
+                cardDescription="A secure crypto wallet app, containing versatile wallet management, real-time market data integration, and seamless token swapping with major decentralized exchanges."
+              />
+              <Card
+                cardTitle="Flixora - Social Media App"
+                cardDescription="Flixora, a cross-platform social app, has features such as user authentication and Firebase backend integration. The app introduces elements such as facial recognition for posts and engaging gamification features, providing users with an immersive social experience."
+              />
+              <Card
+                cardTitle="Portfolio"
+                cardDescription="This current website"
+              />
             </div>
           </div>
         </section>
