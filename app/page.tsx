@@ -62,7 +62,7 @@ export default function Home() {
               About me
             </h2>
             <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
-              I'm a Computer Science graduate with First Class Honours from
+              I&apos;m a Computer Science graduate with First Class Honours from
               Heriot Watt University in Dubai, UAE. My expertise spans a variety
               of programming languages, including JavaScript, TypeScript,
               Python, Dart, and C#. Notably, I developed a comprehensive
@@ -96,7 +96,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1">Portfolio</h3>
             <p className="text-md py-5 leading-8">
-              Burtons is a new display font with cool characters. it's a
+              Burtons is a new display font with cool characters. it&apos;s a
               delightful font duo, serif and script perfect for headlines
             </p>
           </div>
