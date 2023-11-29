@@ -96,14 +96,17 @@ export default function Home() {
               <Card
                 cardTitle="Ethereum Wallet App"
                 cardDescription="A secure crypto wallet app, containing versatile wallet management, real-time market data integration, and seamless token swapping with major decentralized exchanges."
+              cardToolsUsed="Flutter & Dart"
               />
               <Card
                 cardTitle="Flixora - Social Media App"
                 cardDescription="Flixora, a cross-platform social app, has features such as user authentication and Firebase backend integration. The app introduces elements such as facial recognition for posts and engaging gamification features, providing users with an immersive social experience."
+              cardToolsUsed="Flutter & Dart"
               />
               <Card
                 cardTitle="Portfolio"
                 cardDescription="This current website"
+                cardToolsUsed="React.js + Next.js + TailwindCss"
               />
             </div>
           </div>
