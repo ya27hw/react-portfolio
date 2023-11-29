@@ -92,7 +92,7 @@ export default function Home() {
             >
               Projects
             </h2>
-            <div className="md:flex gap-10" id="cards-section">
+            <div className="lg:flex gap-10" id="cards-section">
               <Card
                 cardTitle="Ethereum Wallet App"
                 cardDescription="A secure crypto wallet app, containing versatile wallet management, real-time market data integration, and seamless token swapping with major decentralized exchanges."
