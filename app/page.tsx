@@ -7,11 +7,21 @@ import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
-  // const [darkMode, setDarkMode] = useState(false);
   const handleLinkedInClick = () => {
-    const linkedInUrl = "https://www.linkedin.com";
+    const linkedInUrl = "https://www.linkedin.com/in/yousufeb/";
     window.open(linkedInUrl, "_blank");
   };
+
+  const handleGitHubClick = () => {
+    const gitHubUrl = "https://github.com/ya27hw";
+    window.open(gitHubUrl, "_blank");
+  };
+
+  const handleMailClick = () => {
+    const mailUrl = "mailto:yousufashraf@elbaesy.com";
+    window.open(mailUrl, "_blank");
+  };
+
   return (
     <div className="">
       <Head>
@@ -63,10 +73,10 @@ export default function Home() {
             </h2>
             <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
               I&apos;m a Computer Science graduate with First Class Honours from
-              Heriot Watt University. My expertise spans a variety
-              of programming languages, including JavaScript, TypeScript,
-              Python, Dart, and C#. Notably, I developed a comprehensive
-              Ethereum mobile wallet application using Flutter.
+              Heriot Watt University. My expertise spans a variety of
+              programming languages, including JavaScript, TypeScript, Python,
+              Dart, and C#. Notably, I developed a comprehensive Ethereum mobile
+              wallet application using Flutter.
             </p>
             <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
               Additionally, I led a team in creating a cross-platform social
@@ -87,7 +97,6 @@ export default function Home() {
               <Card cardTitle="Ethereum Wallet App" />
               <Card cardTitle="Flixora - Social Media App" />
               <Card cardTitle="Animu" />
-              {/* <Card cardTitle="Perling Paaland" /> */}
             </div>
           </div>
         </section>
@@ -99,15 +108,22 @@ export default function Home() {
             Contact Me
           </h2>
           <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
-            Feel free to reach out to me on my e-mail yousufashraf@elbaesy.com, or on of my links below. Thank you for your interest!
+            Feel free to reach out to me on my e-mail yousufashraf@elbaesy.com,
+            or on of my links below. Thank you for your interest!
           </p>
           <div className="text-5xl flex justify-center gap-16 py-7">
             <AiFillLinkedin
               onClick={handleLinkedInClick}
               style={{ cursor: "pointer" }}
             />{" "}
-            <AiFillGithub />
-            <AiOutlineMail />
+            <AiFillGithub
+              onClick={handleGitHubClick}
+              style={{ cursor: "pointer" }}
+            />
+            <AiOutlineMail
+              onClick={handleMailClick}
+              style={{ cursor: "pointer" }}
+            />
           </div>
         </section>
       </main>
