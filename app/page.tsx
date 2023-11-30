@@ -4,17 +4,9 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import Card from "./components/Card";
 import NavBar from "./components/NavBar";
 import { TypeAnimation } from "react-type-animation";
+import openUrlInNewTab from "./utils/utils";
 
 export default function Home() {
-  const handleLinkedInClick = () => {
-    const linkedInUrl = "https://www.linkedin.com/in/yousufeb/";
-    window.open(linkedInUrl, "_blank");
-  };
-
-  const openUrlInNewTab = (targetUrl: string) => {
-    window.open(targetUrl, "_blank");
-  };
-
   return (
     <div className="">
       <Head>
@@ -86,29 +78,35 @@ export default function Home() {
             >
               Projects
             </h2>
-            <div className="lg:flex gap-10" id="cards-section">
+            <div
+              className="grid grid-cols-1 gap-10 lg:grid-cols-2"
+              id="cards-section"
+            >
               <Card
                 cardTitle="Ethereum Wallet App"
                 cardDescription="A secure crypto wallet app, containing versatile wallet management, real-time market data integration, and seamless token swapping with major decentralized exchanges."
                 cardToolsUsed="Flutter & Dart"
+                cardGitHubLink="https://github.com/ya27hw/wallet"
               />
               <Card
                 cardTitle="Flixora - Social Media App"
                 cardDescription="Flixora, a cross-platform social app, has features such as user authentication and Firebase backend integration. The app introduces elements such as facial recognition for posts and engaging gamification features, providing users with an immersive social experience."
                 cardToolsUsed="Flutter & Dart"
+                cardGitHubLink="about:blank"
               />
               <Card
                 cardTitle="Portfolio"
-                cardDescription="This current website"
-                cardToolsUsed="React.js + Next.js + TailwindCss"
-              />
+                cardDescription="A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer."
+                cardToolsUsed="React.js + Next.js + Tailwindcss"
+                cardGitHubLink="https://github.com/ya27hw/react-portfolio"
+              />{" "}
             </div>
           </div>
         </section>
         <section>
           <h2
             id="contact"
-            className="text-4xl lg:text-5xl py-3 dark:text-teal-500 text-teal-600 font-medium"
+            className="text-4xl lg:text-5xl pb-3 pt-14 dark:text-teal-500 text-teal-600 font-medium"
           >
             Contact Me
           </h2>
@@ -116,7 +114,7 @@ export default function Home() {
             Feel free to reach out to me on my e-mail yousufashraf@elbaesy.com,
             or on of my links below. Thank you for your interest!
           </p>
-          <div className="text-5xl flex justify-center gap-16 py-7">
+          <div className="text-5xl flex justify-center gap-16 py-7 text-teal-800">
             <AiFillLinkedin
               onClick={() =>
                 openUrlInNewTab("https://www.linkedin.com/in/yousufeb/")
