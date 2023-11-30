@@ -11,14 +11,8 @@ export default function Home() {
     window.open(linkedInUrl, "_blank");
   };
 
-  const handleGitHubClick = () => {
-    const gitHubUrl = "https://github.com/ya27hw";
-    window.open(gitHubUrl, "_blank");
-  };
-
-  const handleMailClick = () => {
-    const mailUrl = "mailto:yousufashraf@elbaesy.com";
-    window.open(mailUrl, "_blank");
+  const openUrlInNewTab = (targetUrl: string) => {
+    window.open(targetUrl, "_blank");
   };
 
   return (
@@ -96,12 +90,12 @@ export default function Home() {
               <Card
                 cardTitle="Ethereum Wallet App"
                 cardDescription="A secure crypto wallet app, containing versatile wallet management, real-time market data integration, and seamless token swapping with major decentralized exchanges."
-              cardToolsUsed="Flutter & Dart"
+                cardToolsUsed="Flutter & Dart"
               />
               <Card
                 cardTitle="Flixora - Social Media App"
                 cardDescription="Flixora, a cross-platform social app, has features such as user authentication and Firebase backend integration. The app introduces elements such as facial recognition for posts and engaging gamification features, providing users with an immersive social experience."
-              cardToolsUsed="Flutter & Dart"
+                cardToolsUsed="Flutter & Dart"
               />
               <Card
                 cardTitle="Portfolio"
@@ -124,15 +118,17 @@ export default function Home() {
           </p>
           <div className="text-5xl flex justify-center gap-16 py-7">
             <AiFillLinkedin
-              onClick={handleLinkedInClick}
+              onClick={() =>
+                openUrlInNewTab("https://www.linkedin.com/in/yousufeb/")
+              }
               style={{ cursor: "pointer" }}
             />{" "}
             <AiFillGithub
-              onClick={handleGitHubClick}
+              onClick={() => openUrlInNewTab("https://github.com/ya27hw")}
               style={{ cursor: "pointer" }}
             />
             <AiOutlineMail
-              onClick={handleMailClick}
+              onClick={() => openUrlInNewTab("mailto:yousufashraf@elbaesy.com")}
               style={{ cursor: "pointer" }}
             />
           </div>
