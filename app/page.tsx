@@ -40,11 +40,15 @@ export default function Home() {
             </p>
           </div>
           <div className="text-xl flex justify-center gap-16 md:text-xl ">
-            <button className="bg-teal-600 text-white font-bold py-3 px-6 rounded-xl">
-              Contact
-            </button>
-            <button className="bg-transparent text-teal-600 font-bold py-3 px-5 rounded-xl border border-teal-600">
-              Resume
+            <button
+              className="bg-transparent text-teal-600 font-bold py-3 px-5 rounded-xl border border-teal-600"
+              onClick={() =>
+                openUrlInNewTab(
+                  "https://app.skiff.com/docs/f3392b40-2471-41ec-9a09-e6d62f89aaa5#Wt9HTe8fRtuCokD1t%2F38vf5HzxpRGGlNdQx0Tbc9qP0%3D"
+                )
+              }
+            >
+              View my Resume
             </button>
           </div>
         </section>
@@ -111,8 +115,8 @@ export default function Home() {
             Contact Me
           </h2>
           <p className="text-md md:text-xl py-2 leading-8 px-11 max-w-4xl">
-            Feel free to reach out to me on my e-mail yousufashraf@elbaesy.com,
-            or on of my links below. Thank you for your interest!
+            Feel free to reach out to me on my e-mail business@elbaesy.com, or
+            on of my links below. Thank you for your interest!
           </p>
           <div className="text-5xl flex justify-center gap-16 py-7 text-teal-800">
             <AiFillLinkedin
@@ -126,7 +130,7 @@ export default function Home() {
               style={{ cursor: "pointer" }}
             />
             <AiOutlineMail
-              onClick={() => openUrlInNewTab("mailto:yousufashraf@elbaesy.com")}
+              onClick={() => openUrlInNewTab("mailto:business@elbaesy.com")}
               style={{ cursor: "pointer" }}
             />
           </div>
