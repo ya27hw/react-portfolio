@@ -49,7 +49,7 @@ export default function Home() {
               cursor={false}
             />
             <p className="text-lg pt-5 leading-8 md:text-xl max-w-xl mx-auto">
-              A software developer specialising in app development, and backend
+              American Software developer specialising in app development, and backend
               development.
             </p>
           </div>
