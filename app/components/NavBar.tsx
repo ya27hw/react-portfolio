@@ -25,7 +25,11 @@ function NavBar() {
         color="black"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#about" className="flex items-center" onClick={() => {}}>
+        <a
+          href="#about"
+          className="flex items-center text-white"
+          onClick={() => {}}
+        >
           About
         </a>
       </Typography>
@@ -35,7 +39,7 @@ function NavBar() {
         color="black"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#projects" className="flex items-center">
+        <a href="#projects" className="flex items-center text-white">
           Projects
         </a>
       </Typography>
@@ -45,7 +49,7 @@ function NavBar() {
         color="black"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#contact" className="flex items-center">
+        <a href="#contact" className="flex items-center text-white">
           Contact
         </a>
       </Typography>
@@ -58,7 +62,7 @@ function NavBar() {
         <Typography
           as="a"
           href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium text-2xl md:text-3xl"
+          className="mr-4 cursor-pointer py-1.5 font-medium text-2xl md:text-3xl text-white"
         >
           Yousuf
         </Typography>
